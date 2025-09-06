@@ -1,29 +1,33 @@
-# Text-Encryption-App
-A simple Python command-line tool for encrypting and decrypting messages using Fernet symmetric encryption. Automatically generates a key (key.key) on first run. Key is stored locally and should be kept safe.
+# EncryptedFile
 
-Proje klasörüne git
+A simple Python command-line tool for encrypting and decrypting messages using Fernet symmetric encryption.
 
+## Features
 
+- Encrypt messages easily from the terminal.
+- Decrypt messages with the same key.
+- Automatically generates a `key.key` file on first run.
+- Key is stored locally and must be kept safe. If the key is lost, encrypted messages cannot be recovered.
 
-Sanal ortam oluştur
+## Installation
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/Emlr574000/EncryptedFile.git
+
+cd EncryptedFile
+
+(Optional)
 
 python -m venv .venv
-
-
-
-Sanal ortamı aktive et
-
+# Windows
 .venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
 
-
-
-Gerekli paketleri yükle
-
+Dependencies:
 pip install cryptography
 
 
-
-Programı çalıştır
-
 python main.py
-
